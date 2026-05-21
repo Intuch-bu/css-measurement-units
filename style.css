@@ -1,1 +1,29 @@
-/* Start coding here */
+/* 1. Reset พื้นฐาน (ป้องกันการคำนวณ Layout ผิดพลาด) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+  
+  /* 2. จัดการกล่องแม่ (ใช้ vh สำหรับความสูงหน้าจอ และ px สำหรับระยะตายตัว) */
+  .container {
+    background-color: lightgrey;
+    height: 100vh;      /* สูงเต็มหน้าต่างเบราว์เซอร์ */
+    padding: 50px;      /* ระยะขอบด้านในคงที่ */
+  }
+  
+  /* 3. แบ่งสัดส่วนกล่องลูก (ใช้ % เพื่ออ้างอิงพื้นที่จากกล่องแม่) */
+  .box-1 {
+    background-color: orange;
+    height: 25%;        /* ความสูง 1/4 ของ Container */
+  }
+  
+  .box-2 {
+    background-color: khaki;
+    height: 25%;        /* ความสูง 1/4 ของ Container */
+  }
+  
+  .box-3 {
+    background-color: cornflowerblue;
+    height: 50%;        /* ความสูง 1/2 ของ Container */
+  }
